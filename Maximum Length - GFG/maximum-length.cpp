@@ -11,13 +11,10 @@ class Solution {
 public:
     int solve(int a, int b, int c) {
         // code here
-        int x=a+b+c,y;
-        if(x%2!=0)
-        y=x+1;
-        else
-        y=x;
+        int x=a+b+c;
         
-        if(a<=(2*y/3)&&b<=(2*y/3)&&c<=(2*y/3))
+        
+        if(a<=(2*x/3)&&b<=(2*x/3)&&c<=(2*x/3))
         return x;
         else
         return -1;
